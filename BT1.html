@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <TABLE border="0">
+        <tr>
+            <td>
+                <b>
+                    Caculator
+                </b><br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" id="number1"/>
+            </td>
+            <td colspan="2">
+                <input type="text" id="number2"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="kq1()">Addition(+)</button>
+            </td>
+            <td>
+                <button type="button" onclick="kq2()">Subtraction(-)</button>
+            </td>
+            <td>
+                <button type="button" onclick="kq3()">Multiplication</button>
+            </td>
+            <td>
+                <button type="button" onclick="kq4()">Division</button>
+            </td>
+        </tr>
+    </TABLE>
+</form>
+<div id="kq5"></div>
+<script>
+    function kq1() {
+        let a = Number(document.getElementById('number1').value);
+        let b = Number(document.getElementById('number2').value);
+        let c = a + b;
+        document.getElementById('kq5').innerHTML = 'ket qua la: ' + c;
+    }
+
+    function kq2() {
+        let a = Number(document.getElementById('number1').value);
+        let b = Number(document.getElementById('number2').value);
+        let c = a - b;
+        document.getElementById('kq5').innerHTML = 'ket qua la: ' + c;
+    }
+
+    function kq3() {
+        let a = Number(document.getElementById('number1').value);
+        let b = Number(document.getElementById('number2').value);
+        let c = a * b;
+        document.getElementById('kq5').innerHTML = 'ket qua la: ' + c;
+    }
+
+    function kq4() {
+        let a =Number(document.getElementById('number1').value);
+        let b =Number(document.getElementById('number2').value);
+        let c = a / b;
+        document.getElementById('kq5').innerHTML = 'ket qua la: ' + c;
+    }
+</script>
+</body>
+</html>
